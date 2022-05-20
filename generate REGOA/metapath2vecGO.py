@@ -174,8 +174,8 @@ def grnwalk(walks, genesets, walknum, walklen, grn, logo):
                 walk.append(tf)
                 re = choice(list(grn['tfs'][tf]))
                 walk.append(re)
-                tf = choice(list(grn['res'][re]['reg']))
-                walk.append(tf)
+                gene = choice(list(grn['res'][re]['reg']))
+                walk.append(gene)
             walks.append(walk)
         count += 1
         if count % 10 == 0:
@@ -316,8 +316,8 @@ def mp2vwalk(walknum,walklen):
                 walk.append(tf)
                 re = choice(list(grn['tfs'][tf]))
                 walk.append(re)
-                tf = choice(list(grn['res'][re]['reg']))
-                walk.append(tf)
+                gene = choice(list(grn['res'][re]['reg']))
+                walk.append(gene)
             walks.append(walk)
         count+=1
         if count%100==0:
